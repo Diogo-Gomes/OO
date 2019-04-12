@@ -1,0 +1,28 @@
+package aula_;
+
+public class Principal {
+
+	public static void main(String[] args)  {
+		// TODO Auto-generated method stub
+		Retangulo r1, r2, r3;
+		
+		r1 = new Retangulo();
+		System.out.println("r1: " +r1);
+		System.out.println("Area: " +r1.calculaArea());
+		Ssytem.out.println("Perimetro: " +r1.calculaPerimetro());
+		
+		System.out.println("---------");
+		
+		r2 = new Retangulo(2, 3);
+		System.out.println("r2: " +r2);
+		System.out.println("Area: " +r2.calculaArea());
+		System.out.println("Perimetro: " +r2.calculaPerimetro());
+		
+		System.out.println("Vou destruir !!");
+		r2 =null;
+		System.gc(); // Chamada explicita a coletor de lixo 
+		Thread.sleep(3000);
+		System.out.println("Fim de programa");
+	}
+
+}
