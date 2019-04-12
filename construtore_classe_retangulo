@@ -1,0 +1,33 @@
+package aula_;
+
+public class Retangulo {
+
+	public static void main(String[] args) {
+		float base;
+		float altura;
+		
+		public Retangulo() {
+			System.out.println("metodo construtor padrão chamado");
+			System.out.println("Atributos inicializados com valor padrão");
+		}
+		public Retangulo(float a, float b) {
+			System.out.println("metodo construtor alternativo");
+			altura = a;
+			base = b;
+		}
+		protected void finalize() throws Throwable{
+		System.ou.println("Executado momentos antes de destruir objeto");	
+		System.ou.println("estado do obj a ser destruido");
+		System.ou.println("base: " + base);
+		System.ou.println("altura: " + altura);
+				
+		}
+		float calculaArea() {
+			return base*altura;		
+		}
+		float calculaPerimetro() {
+			return 2*base + 2*altura;		
+		}
+	}
+
+}
