@@ -1,0 +1,26 @@
+
+package area;
+
+public class Triangulo {
+    float base,
+          altura,
+          lado1,
+          lado2,
+          lado3;
+    
+    public Triangulo(float bas, float al, float lad1,float lad2,float lad3){
+        System.out.println("metodo construtor alternativo");
+        base = bas;
+        altura = al;
+        lado1 = lad1;
+        lado2 = lad2;
+        lado3 = lad3;
+    }
+    float calculaArea() {
+            return (base*altura)/2;		
+        }
+        float calculaPerimetro() {
+            return lado1 + lado2 + lado3;		
+        }
+    
+}
