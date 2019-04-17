@@ -1,0 +1,14 @@
+package area;
+
+public class Circulo {
+    float raio; //raio
+    double pi = 3.1415;
+    public Circulo(float r) {
+        System.out.println("metodo construtor alternativo");
+        raio = r;
+    }
+    double calculaArea() {
+        return pi * raio * raio;
+    }
+        
+}
