@@ -1,0 +1,42 @@
+package area;
+
+public class Area {
+
+    public static void main(String[] args) {
+    Retangulo r1, r2, r3;
+    Circulo c1;
+    Triangulo t1;
+    Trapezio tz1;
+
+    r1 = new Retangulo();
+    System.out.println("r1: " +r1);
+    System.out.println("Area: " +r1.calculaArea());
+    System.out.println("Perimetro: " +r1.calculaPerimetro());
+
+    System.out.println("---------");
+
+    r2 = new Retangulo(2, 3);
+    System.out.println("r2: " +r2);
+    System.out.println("Area: " +r2.calculaArea());
+    System.out.println("Perimetro: " +r2.calculaPerimetro());
+
+    System.out.println("Vou destruir !!");
+    r2 =null;
+    System.gc(); // Chamada explicita a coletor de lixo 
+    //Thread.sleep(3000);
+    System.out.println("Fim de programa");
+    
+    c1 = new Circulo(1);
+    System.out.println("raio: " +c1.raio);
+    System.out.println("Area do cirulo: " +c1.calculaArea());
+    
+    t1 = new Triangulo(1,3,1,2,4);
+    System.out.println("Área triangulo: " +t1.calculaArea());
+    System.out.println("Perimetro do triangulo: " +t1.calculaPerimetro());
+    
+    tz1 = new Trapezio(2,4,5,8,9);
+    System.out.println("Área do trapezio: " +tz1.calculaArea());
+    System.out.println("Perimetro do trapezio: " +tz1.calculaPerimetro());
+    }
+    
+}
